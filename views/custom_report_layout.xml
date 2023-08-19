@@ -14,7 +14,7 @@
                     src: local('Tajawal'), local('Tajawal'), url(/odoo_arabic_taxable_invoice/static/src/fonts/Tajawal-Bold.ttf)
                     format('opentype');
                     }
-                    @font-fac
+                    @font-face {
                     font-family: 'Tajawal-ExtraBold';
                     src: local('Tajawal'), local('Tajawal'),
                     url(/odoo_arabic_taxable_invoice/static/src/fonts/Tajawal-ExtraBold.ttf) format('opentype');
