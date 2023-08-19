@@ -79,7 +79,7 @@
                                     <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" style="max-height: 120px;" alt="Logo" />
                                 </td>
                                 <td width="25%" style="border: 1px solid white;">
-                                    <img align="right" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'%('QR', o.l10n_ar_qr_data, 140, 140)" style="max-height: 140px;" />
+                                    <img align="right" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'%('QR', o.get_qr_code(), 140, 140)" style="max-height: 140px;" />
                                 </td>
                                 <td width="40%">
                                     <div style="text-align: right;font-size: 20px;" class="black">
