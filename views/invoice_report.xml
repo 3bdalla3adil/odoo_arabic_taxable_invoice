@@ -129,10 +129,10 @@
                                         <t t-raw="o.company_id.street or ''"/>
                                     </div>
                                     <div style="text-align: right;font-size: 14px;" class="black">
-                                        <span><t t-raw="o.company_id.street or ''"/>:</span><span>رقم السجل التجاري</span>
+                                        <span><t t-raw="o.company_id.company_registry or ''"/>:</span><span>رقم السجل التجاري</span>
                                     </div>
                                     <div style="text-align: right;font-size: 14px;" class="black">
-                                        <span><t t-raw="o.company_id.street or ''"/>:</span><span>رقم التعريف الضريبي:</span>
+                                        <span><t t-raw="o.company_id.vat or ''"/>:</span><span>رقم التعريف الضريبي:</span>
                                     </div>
                                      <div style="text-align: right;font-size: 20px;margin-top:35px" class="black">
                                        <span>:</span><span>حررت الفاتورة ل</span>
@@ -141,7 +141,7 @@
                                         <span><t t-raw="o.partner_id.name or ''"/>:</span><span>السادة</span>
                                     </div>
                                     <div style="text-align: right;font-size: 20px;" class="black">
-                                        <span><t t-raw="o.partner_id.contact_address or ''"/>:</span><span>العنوان</span>
+                                        <span><t t-raw="o.patient.user_id.name or ''"/>:</span><span>اسم الطبيب</span>
                                     </div>
                                      <div style="text-align: right;font-size: 20px;" class="black">
                                        <span><t t-raw="o.patient.ssn or ''"/>:</span><span>رقم الهوية</span>
