@@ -95,13 +95,11 @@
                                 </div>
                             </div>
                             <div  id="invoice-detail" style="margin-top:3px;margin-bottom:3px;margin-left:3px">
-                                    <!-- <div class="text-left regular">
-                                        <span t-field="o.partner_id.name or '' "/>
-                                        :<span>اسم  العميل</span>
-                                    </div> -->
+                                    
                                     <div class="text-left regular">
-                                        <span t-field="o.partner_id.doctor or '' "/>
-                                        :<span>اسم  الطبيب</span>
+                                        <span t-field="o.patient.display_name or '' "/>
+                                        <span t-field="o.partner.name or '' "/>
+                                        :<span>اسم العميل</span>
                                     </div>    
                                     <div class="text-left regular ">
                                         <span t-field="o.patient.ssn or 
