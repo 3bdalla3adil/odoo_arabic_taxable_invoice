@@ -126,7 +126,7 @@
                                         <t t-raw="o.company_id.name or ''"/>
                                     </div>
                                     <div style="text-align: right;font-size: 20px;" class="black">
-                                        <t t-raw="o.company_id.company_registry or ''"/>
+                                        <t t-raw="o.company_id.street or ''"/>
                                     </div>
                                     <div style="text-align: right;font-size: 14px;" class="black">
                                         <span><t t-raw="o.company_id.company_registry or ''"/>:</span><span>رقم السجل التجاري</span>
