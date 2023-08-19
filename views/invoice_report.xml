@@ -258,7 +258,7 @@
                                         
                                     </td>
                                     <td class="td-2 text-center black">
-                                        <span t-field="o.patient.user_id.name"/>
+                                        <span t-field="o.user_id.name"/>
                                     </td>
                                     <td class="td-3 text-left black" style="background-color: #dfdfdf;">
                                         اسم الطبيب
