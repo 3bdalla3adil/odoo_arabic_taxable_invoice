@@ -189,26 +189,7 @@
                                         الاستحقاق
                                     </td>
                                 </tr>
-                                <!-- <tr>
-                                    <td class="td-1 text-center table-border black" style="background-color: #dfdfdf;">Inv.
-                                        Type
-                                    </td>
-                                    <td class="td-2 table-border text-center regular">
-                                        <t t-if="o.invoice_payment_term_id
-                                            " t-esc="o.invoice_payment_term_id.name[:17]" />
-                                    </td>
-                                    <td class="td-3 text-left table-border black" style="background-color: #dfdfdf;">نوع
-                                        الفاتورة
-                                    </td>
-                                    <td class="td-4 text-center table-border black" style="background-color: #dfdfdf;">Ref
-                                    </td>
-                                    <td class="td-5 table-border text-center regular">
-                                        <t t-esc="o.ref" />
-                                    </td>
-                                    <td class="td-6 text-left table-border black" style="background-color: #dfdfdf;">
-                                        المرجع
-                                    </td>
-                                </tr> -->
+                                
                             </tbody>
                         </table>
                         <!-- Table 2 -->
@@ -266,12 +247,7 @@
                                     <td class="td-4 text-center black" style="background-color: #dfdfdf;">
                                         
                                     </td>
-                                    <!-- <td class="td-5 text-center regular">
-                                        <span t-field="o.partner_id.vat" />
-                                    </td>
-                                    <td class="td-6 text-left black" style="background-color: #dfdfdf;">الرقم
-                                        الضريبي
-                                    </td> -->
+                                    
                                 </tr>
                             </tbody>
                         </table>
@@ -283,10 +259,10 @@
                                 <td class="td-7 text-center table-border" width="2%">م</td>
                                 <td class="td-8 text-center table-border" width="68%" >البيــــــــــــــــان</td>
                                 <td class="td-9 text-center table-border" width="6%">العدد</td>
-                                <td class="td-9 text-center table-border" width="6%">الخصم</td>
-                                <td class="td-10 text-center table-border" width="10%">السعر</td>
-                                <td class="td-11 text-center table-border" width="12%">الضريبة</td>
-                                <td class="td-12 text-center table-border" width="12%">الإجمالي</td>
+                                <td class="td-10 text-center table-border" width="6%">الخصم</td>
+                                <td class="td-11 text-center table-border" width="10%">السعر</td>
+                                <td class="td-12 text-center table-border" width="12%">الضريبة</td>
+                                <td class="td-13 text-center table-border" width="12%">الإجمالي</td>
                             </tr>
                         </thead>
                         <tbody style="font-size: 14px; line-height: 0.2;border:1px solid black;">
@@ -330,7 +306,7 @@
                                         </t>
                                         <t t-else=""></t>
                                     </td>
-                                    <td class="td-9 text-center" width="6%" t-att-style="td_border_style">
+                                    <td class="td-10 text-center" width="6%" t-att-style="td_border_style">
                                         <t t-if="not l.display_type">
                                             <div class="mt-2">
                                                 <span t-esc="'{:.2f}'.format(l.discount)" />
@@ -338,7 +314,7 @@
                                         </t>
                                         <t t-else=""></t>
                                     </td>
-                                    <td class="td-10 text-center" width="10%" t-att-style="td_border_style">
+                                    <td class="td-11 text-center" width="10%" t-att-style="td_border_style">
                                         <t t-if="not l.display_type">
                                             <div class="mt-2">
                                                 <span t-esc="'{:.2f}'.format(l.price_unit)" />
@@ -346,7 +322,7 @@
                                         </t>
                                         <t t-else=""></t>
                                     </td>
-                                    <td class="td-11 text-center" width="12%" t-att-style="td_border_style">
+                                    <td class="td-12 text-center" width="12%" t-att-style="td_border_style">
                                         <t t-if="not l.display_type">
                                             <div class="mt-2">
                                                 <span t-esc="l.quantity and '{:.2f}'.format((l.price_total- l.price_subtotal)/l.quantity) or 0.0" />
@@ -354,7 +330,7 @@
                                         </t>
                                         <t t-else=""></t>
                                     </td>
-                                    <td class="td-12 text-center" width="12%" t-att-style="td_border_style">
+                                    <td class="td-13 text-center" width="12%" t-att-style="td_border_style">
                                         <t t-if="not l.display_type">
                                             <div class="mt-2">
                                                 <span t-esc="'{:.2f}'.format(l.price_subtotal)" />
@@ -371,16 +347,16 @@
                                 <t t-foreach="rem_len" t-as="line">
                                     <t t-set="len_l" t-value="len_l+1" />
                                     <t t-if="rem_len == line +1 " >
-                                        <t t-set="td_border_style">
+                                        <!-- <t t-set="td_border_style">
                                             border-bottom: 2px solid;
                                             border-right : 2px solid;
-                                        </t>
+                                        </t> -->
                                     </t>
                                     <t t-else="">
-                                        <t t-set="td_border_style">
+                                        <!-- <t t-set="td_border_style">
                                             border-bottom: 0px !important;
                                             border-right : 0px !important;
-                                        </t>
+                                        </t> -->
                                     </t>
                                     <tr class="regular product_block">
                                         <td class="td-7 text-center" t-att-style="td_border_style">
@@ -388,6 +364,7 @@
                                                  <span class="mt-2"/>
                                             </div>
                                         </td>
+                                        <td t-att-style="td_border_style"/>
                                         <td t-att-style="td_border_style"/>
                                         <td t-att-style="td_border_style"/>
                                         <td t-att-style="td_border_style"/>
