@@ -373,11 +373,13 @@
                                     <t t-if="rem_len == line +1 " >
                                         <t t-set="td_border_style">
                                             border-bottom: 2px solid;
+                                            border-right : 2px solid;
                                         </t>
                                     </t>
                                     <t t-else="">
                                         <t t-set="td_border_style">
                                             border-bottom: 0px !important;
+                                            border-right : 0px !important;
                                         </t>
                                     </t>
                                     <tr class="regular product_block">
@@ -396,6 +398,8 @@
                             </t>
                         </tbody>
                     </table>
+
+                    <!-- Table Under Invoice Line -->
                     <div class="footer">
                         <table class="table table-bordered table-condensed">
                             <tbody style="font-size: 14px; line-height: 0.2;">
