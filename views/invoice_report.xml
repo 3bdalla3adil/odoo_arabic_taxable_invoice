@@ -144,7 +144,7 @@
                                         <span>:</span><span>العنوان</span>
                                     </div> -->
                                      <div style="text-align: right;font-size: 20px;" class="black">
-                                       <span><span t-field="o.partner_id. or '' "/>:</span><span>الرقم الضريبي</span>
+                                       <span><span t-field="o.patient.user_id.name or '' "/>:</span><span>اسم الطبيب  </span>
                                     </div>
                                
                             </div>
@@ -162,15 +162,7 @@
                                     <td class="td-12 text-center table-border" width="12%">الضريبة</td>
                                     <td class="td-13 text-center table-border" width="12%">الإجمالي</td>
                                 </tr>
-                                <!-- <tr class="black" style="background-color: #dfdfdf;">
-                                    <td class="td-7 text-center table-border">S.</td>
-                                    <td class="td-8 text-center table-border" >Description</td>
-                                    <td class="td-9 text-center table-border">Qty</td>
-                                    <td class="td-10 text-center table-border">Disc</td>
-                                    <td class="td-11 text-center table-border">Price</td>
-                                    <td class="td-12 text-center table-border">VAT</td>
-                                    <td class="td-13 text-center table-border">Amount</td>
-                                </tr> -->
+                                
                             </thead>
                         <tbody style="font-size: 14px; line-height: 0.2;">
                             <t t-set="line_len" t-value="24" />
@@ -350,57 +342,6 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <!-- Table 4 -->
-                        <!-- <table class="table table-bordered table-condensed">
-                            <tbody style="font-size: 14px;">
-                                <tr class="black" style="line-height: 0.1;">
-                                    <td class="td-13 text-center table-border" style="background-color: #dfdfdf;border-top:1px solid black;border-right:1px solid;border-bottom:1px solid;border-left:1px solid black;">Salesman
-                                    </td>
-                                    <td class="td-14 text-center table-border" style="background-color: #dfdfdf;border-right:1px solid;border-top:1px solid black;border-bottom:1px solid;">Approved
-                                        by:
-                                    </td>
-                                    <td class="td-15 text-center table-border" style="background-color: #dfdfdf;border-right:1px solid;border-top:1px solid black;border-bottom:1px solid;">Received
-                                        by:
-                                    </td>
-                                    <td class="td-16 text-center table-border" style="background-color: #dfdfdf;border-top:1px solid black;border-bottom:1px solid;">Customer
-                                        signature
-                                    </td>
-                                </tr>
-                                <tr class="black" style="line-height: 0.1;">
-                                    <td class="td-13 text-center table-border" style="background-color: #dfdfdf;border-right:1px solid;border-bottom:1px solid;border-left:1px solid black;">البائع
-                                    </td>
-                                    <td class="td-14 text-center table-border" style="background-color: #dfdfdf;border-right:1px solid;border-bottom:1px solid;">اعتمد
-                                        بواسطة
-                                    </td>
-                                    <td class="td-15 text-center table-border" style="background-color: #dfdfdf;border-right:1px solid;border-bottom:1px solid;">استلم
-                                        بواسطة
-                                    </td>
-                                    <td class="td-16 text-center table-border" style="background-color: #dfdfdf;border-right:1px solid;border-bottom:1px solid;">توقيع
-                                        العميل
-                                    </td>
-                                </tr>
-                                <tr class="regular" style="line-height: 0.4;border-right:1px solid;">
-                                    <td class="td-13 text-center table-border" style="border-right:1px solid;border-bottom:1px solid;border-left:1px solid black;">
-                                        <span t-field="o.user_id" />
-                                    </td>
-                                    <td class="td-14 table-border" style="border-right:1px solid;border-bottom:1px solid;">
-                                        <br />
-                                        <br />
-                                        <br />
-                                    </td>
-                                    <td class="td-15 table-border" style="border-right:1px solid;border-bottom:1px solid;">
-                                        <br />
-                                        <br />
-                                        <br />
-                                    </td>
-                                    <td class="td-16 table-border" style="border-right:1px solid;border-bottom:1px solid;">
-                                        <br />
-                                        <br />
-                                        <br />
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table> -->
                         <div style="margin-top:10px" class="text-right">
                             <p><span>:</span><span>اسم المستلم:</span></p>
                             <p><span>:</span><span>توقيع المستلم:</span></p>
