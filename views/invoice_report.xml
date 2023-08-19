@@ -6,43 +6,43 @@
             </xpath>
         </template>
         <template id="report_invoice_document">
-            <t t-call="arabic_taxable_invoice_knk.custom_internal_layout">
+            <t t-call="odoo_arabic_taxable_invoice.custom_internal_layout">
                 <t t-set="o" t-value="o.with_context(lang=lang)" />
                 <style>
                     @font-face {
                     font-family: 'Tajawal-Black';
-                    src: local('Tajawal'), local('Tajawal'), url(/arabic_taxable_invoice_knk/static/src/fonts/Tajawal-Black.ttf)
+                    src: local('Tajawal'), local('Tajawal'), url(/odoo_arabic_taxable_invoice/static/src/fonts/Tajawal-Black.ttf)
                     format('opentype');
                     }
                     @font-face {
                     font-family: 'Tajawal-Bold';
-                    src: local('Tajawal'), local('Tajawal'), url(/arabic_taxable_invoice_knk/static/src/fonts/Tajawal-Bold.ttf)
+                    src: local('Tajawal'), local('Tajawal'), url(/odoo_arabic_taxable_invoice/static/src/fonts/Tajawal-Bold.ttf)
                     format('opentype');
                     }
                     @font-face {
                     font-family: 'Tajawal-ExtraBold';
                     src: local('Tajawal'), local('Tajawal'),
-                    url(/arabic_taxable_invoice_knk/static/src/fonts/Tajawal-ExtraBold.ttf) format('opentype');
+                    url(/odoo_arabic_taxable_invoice/static/src/fonts/Tajawal-ExtraBold.ttf) format('opentype');
                     }
                     @font-face {
                     font-family: 'ExtraLigh';
                     src: local('Tajawal'), local('Tajawal'),
-                    url(/arabic_taxable_invoice_knk/static/src/fonts/Tajawal-ExtraLigh.ttf) format('opentype');
+                    url(/odoo_arabic_taxable_invoice/static/src/fonts/Tajawal-ExtraLigh.ttf) format('opentype');
                     }
                     @font-face {
                     font-family: 'Tajawal-Light';
-                    src: local('Tajawal'), local('Tajawal'), url(/arabic_taxable_invoice_knk/static/src/fonts/Tajawal-Light.ttf)
+                    src: local('Tajawal'), local('Tajawal'), url(/odoo_arabic_taxable_invoice/static/src/fonts/Tajawal-Light.ttf)
                     format('opentype');
                     }
                     @font-face {
                     font-family: 'Tajawal-Medium';
-                    src: local('Tajawal'), local('Tajawal'), url(/arabic_taxable_invoice_knk/static/src/fonts/Tajawal-Medium.ttf)
+                    src: local('Tajawal'), local('Tajawal'), url(/odoo_arabic_taxable_invoice/static/src/fonts/Tajawal-Medium.ttf)
                     format('opentype');
                     }
                     @font-face {
                     font-family: 'Tajawal-Regular';
                     src: local('Tajawal'), local('Tajawal'),
-                    url(/arabic_taxable_invoice_knk/static/src/fonts/Tajawal-Regular.ttf) format('opentype');
+                    url(/odoo_arabic_taxable_invoice/static/src/fonts/Tajawal-Regular.ttf) format('opentype');
                     }
                     .regular{
                     font-family: Tajawal-Regular !important;
@@ -531,7 +531,7 @@
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
                     <t t-set="lang" t-value="o.user_id.sudo().lang if o.move_type in ('in_invoice', 'in_refund') else o.partner_id.lang" />
-                    <t t-call="arabic_taxable_invoice_knk.report_invoice_document" t-lang="lang" />
+                    <t t-call="odoo_arabic_taxable_invoice.report_invoice_document" t-lang="lang" />
                 </t>
             </t>
         </template>
