@@ -1,0 +1,210 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_arabic_taxable_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20211218\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-18 22:27+0000\n"
+"PO-Revision-Date: 2023-06-18 22:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.actions.report,print_report_name:odoo_arabic_taxable_invoice.account_invoices
+msgid "(object._get_report_base_filename())"
+msgstr ""
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span> Invoice Date </span>:"
+msgstr ":<span>تاريخ الفاتورة </span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid ":<span>Invoice Number </span>"
+msgstr ":<span>رقم الفاتورة </span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span></span><span>recipient name:</span>"
+msgstr "<span>:</span><span>اسم المستلم</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span>VAT Number</span><span>:</span>"
+msgstr "<span>:</span><span>الرقم الضريبي</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span>Sir</span><span>:</span>"
+msgstr "<span>:</span><span>السادة</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span>Address</span><span>:</span>"
+msgstr "<span>:</span><span>العنوان</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span>Signed By</span><span>:</span>"
+msgstr "<span>:</span><span>توقيع المستلم</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span>Released for</span><span>:</span>"
+msgstr "<span>:</span><span>حررت الفاتورة ل</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span>TAX ID</span><span>:</span>"
+msgstr "<span>:</span><span>رقم التعريف الضريبي</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span>Company Registry</span><span>:</span>"
+msgstr "<span>:</span><span>رقم السجل التجاري</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span>Taxable Invoice</span>"
+msgstr "<span>فاتورة ضريبية</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "<span>Refund Invoice</span>"
+msgstr "<span>فاتورة مرتجعات</span>"
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.actions.report,name:odoo_arabic_taxable_invoice.account_invoices
+msgid "Arabic Taxable Invoice"
+msgstr "فاتورة ضريبية عربية"
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model,name:odoo_arabic_taxable_invoice.model_res_company
+msgid "Companies"
+msgstr "شركات"
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_res_company__company_registry
+msgid "Company Registry"
+msgstr "سجل المؤسسة"
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_account_bank_statement_line__einv_sa_confirmation_datetime
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_account_move__einv_sa_confirmation_datetime
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_account_payment__einv_sa_confirmation_datetime
+msgid "Confirmation Date"
+msgstr "تاريخ التأكيد"
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_res_company__knk_footer
+msgid "Footer"
+msgstr ""
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_res_company__knk_header1
+msgid "Header 1st Line"
+msgstr ""
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_res_company__knk_header2
+msgid "Header 2nd Line"
+msgstr ""
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_res_company__knk_header3
+msgid "Header 3rd Line"
+msgstr ""
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_res_company__knk_header4
+msgid "Header 4th Line"
+msgstr ""
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_account_bank_statement_line__invoice_date
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_account_move__invoice_date
+#: model:ir.model.fields,field_description:odoo_arabic_taxable_invoice.field_account_payment__invoice_date
+msgid "Invoice Date"
+msgstr "تاريخ الفاتورة"
+
+#. module: odoo_arabic_taxable_invoice
+#: model:ir.model,name:odoo_arabic_taxable_invoice.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Logo"
+msgstr ""
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Every Item spent more than three days from Invoice date is Not refundable"
+msgstr "أقصى موعد لاستبدال او ارجاع البضاعة هو ثلاثة ايام من تاريخ الفاتورة"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Partial Total"
+msgstr "الاجمالي الجزئي"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Total VAT Included"
+msgstr "الاجمالي شامل ضريبة القيمة المضافة"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "VAT Rate"
+msgstr "معدل الضريبة"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Code"
+msgstr "الكود"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Due Price"
+msgstr "المبلغ المستحق"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Partial Sum"
+msgstr "المجموع الجزئي"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Payed"
+msgstr "المدفوع"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Description"
+msgstr "الوصف"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "Unit Price"
+msgstr "سعر الوحدة"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "ضريبة القيمة المضافة %15"
+msgstr "VAT %15"
+
+#. module: odoo_arabic_taxable_invoice
+#: model_terms:ir.ui.view,arch_db:odoo_arabic_taxable_invoice.report_invoice_document
+msgid "VAT Excluded Price"
+msgstr "للضريبةالمبلغ الخاضع"
