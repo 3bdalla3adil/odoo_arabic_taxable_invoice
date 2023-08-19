@@ -238,7 +238,7 @@
                                     </td>
                                     <td class="td-2 text-center regular" width="20%">
                                         <t t-if="o.partner_id.id">
-                                            <span t-esc="o.patient_id" />
+                                            <span t-esc="o.dentist" />
                                         </t>
                                     </td>
                                     <td class="td-3 text-left black" width="12%" style="background-color: #dfdfdf;">رقم الهوية
