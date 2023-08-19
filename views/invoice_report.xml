@@ -278,18 +278,18 @@
                     </div>
                     <!-- Invoice Line Table  -->
                     <table class="table table-bordered" >
-                         <thead style="font-size: 14px; line-height: 0.2;">
-                                <tr class="black" style="background-color: #dfdfdf;">
-                                    <td class="td-7 text-center table-border" width="2%">م</td>
-                                    <td class="td-8 text-center table-border" width="68%" >البيــــــــــــــــان</td>
-                                    <td class="td-9 text-center table-border" width="6%">العدد</td>
-                                    <td class="td-9 text-center table-border" width="6%">الخصم</td>
-                                    <td class="td-10 text-center table-border" width="10%">السعر</td>
-                                    <td class="td-11 text-center table-border" width="12%">الضريبة</td>
-                                    <td class="td-12 text-center table-border" width="12%">الإجمالي</td>
-                                </tr>
-                            </thead>
-                        <tbody style="font-size: 14px; line-height: 0.2;">
+                        <thead style="font-size: 14px; line-height: 0.2;">
+                            <tr class="black" style="background-color: #dfdfdf;">
+                                <td class="td-7 text-center table-border" width="2%">م</td>
+                                <td class="td-8 text-center table-border" width="68%" >البيــــــــــــــــان</td>
+                                <td class="td-9 text-center table-border" width="6%">العدد</td>
+                                <td class="td-9 text-center table-border" width="6%">الخصم</td>
+                                <td class="td-10 text-center table-border" width="10%">السعر</td>
+                                <td class="td-11 text-center table-border" width="12%">الضريبة</td>
+                                <td class="td-12 text-center table-border" width="12%">الإجمالي</td>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size: 14px; line-height: 0.2;border:1px solid black;">
                             <t t-set="line_len" t-value="24" />
                             <t t-set="len_l" t-value="0" />
                             <t t-set="inv_l" t-value="0" />
