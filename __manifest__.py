@@ -1,21 +1,30 @@
 # -*- coding: utf-8 -*-
+# Powered by Kanak Infosystems LLP.
+# © 2020 Kanak Infosystems LLP. (<https://www.kanakinfosystems.com>).
 
 {
-    "name": "Arabic Invoice Report",
-    "version": "15.0.1.1",
-    "summary": "Arabic Invoice Report",
-    "author": "Manoj Khadka",
-    "category": "Accounting",
-    "depends": ["account"],
+    "name": "Arabic Taxable Invoice",
+    "version": "17.0.1.0",
+    'license': 'OPL-1',
+    "author": "Kanak Infosystems LLP.",
+    "website": "https://www.kanakinfosystems.com",
+    "category": "Accounting/Accounting",
+    "depends": [
+        "account"
+    ],
+    "summary": "Arabic Taxable Invoice Module is the Invoice Receipt Layout which is printed in english as well as Arabic language to ensure customer's ease of readability and displays content in proper format ready to use for commercial purpose. | Invoice Report | Qweb Report | Taxable Invoice | Invoice Report | Arabic Invoice Report | Arabic Invoice | Arabic Invoice",
+    "description": """
+Arabic Taxable Invoice Module is the Invoice Receipt Layout which is printed in english as well as Arabic language to ensure customer's ease of readability and displays content in proper format ready to use for commercial purpose.
+    """,
     "data": [
         "data/report_paperformat.xml",
         "report/account_report.xml",
         "views/invoice_report.xml",
-        #"views/custom_report_layout.xml",
-        # "views/invoice_view.xml",
+        "views/account_move_views.xml",
         "views/res_company.xml",
     ],
-    'installable': True,
-    'application': True,
-    'auto_install': False,
+    'images': [
+        'static/description/banner.jpg'
+    ],
+    'installable': True
 }

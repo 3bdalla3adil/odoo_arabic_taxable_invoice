@@ -5,7 +5,7 @@
 from odoo import fields, models
 
 
-class RESCompany(models.Model):
+class ResCompany(models.Model):
     _inherit = "res.company"
 
     knk_footer = fields.Char('Footer')
